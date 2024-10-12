@@ -23,3 +23,24 @@
 
 ## Part 3: Generate Bitstream and Program Zedboard.
 #### The next step is to implement the example provided in the appendix and then implement the code in the part1 on the Zedboard. You will need to set up the switches as inputs and have the led output on the TOP file. Think of the TOP file as the interface between the hardware and your source. All the functionality should be in your source file
+
+# Exercise 2
+## DESIGN, SIMULATION AND SYNTHESIS OF SEQUENTIAL LOGIC AND IMPLEMENTING ON THE ZEDBOARD
+#### Universal Counter
+#### There are many styles to design sequential logic. Even when all of them may behave in the same manner during simulations, each of these styles affects synthesis of the actual hardware in different ways. The task here is to design a clocked counter block that is loadable, resettable, and bidirectional
+#### The specification of the counter are (see also the table below):
+####  Counting when the input enable is b”1”, and paused otherwise.
+####  Resetting occurs when the input reset is b”1”.
+####  Counting up (output count increases) when input dir is b”0”, and vice-versa, count down when the dir is b”1”.
+####  On overflow (underflow) set the output over to b”1” and set count to D”0” (or D”15”) then continue counting upwards (or downwards).
+####  When both load and enable are b”1”, the counter loads the 4-bit vector from data and saves into count
+<img width="541" alt="image" src="https://github.com/user-attachments/assets/7913aa1b-2309-40a5-b77b-44c3792bbb11">
+
+#### You are required to write the module counter’s architecture within a single process. We recommend using variables for count. Implement with asynchronous active-low reset.
+## Part1:
+####  Design the counter component with the above specifications.
+####  Write a test bench and check all possible functionalities of the counter, that is, reset, enable, counting direction, load data. Note that the test signals could either be synchronous or asynchronous with the simulated clock, but the output count and over can only be asynchronous on rst_n’s rising_edge
+#### Simulate by showing on the waveform window all the relevant signals (e.g., clk, enable, rst_n, dir, count, over, data.
+## Part2:
+####  Implement the code in part1 on the zedboard, setting up the switches as inputs, LEDs as outputs and RESET button as reset.
+####  Reminder: Zedboard internal clock is 100MHz, you have to use a frequency divider to shorten the counting slot.
