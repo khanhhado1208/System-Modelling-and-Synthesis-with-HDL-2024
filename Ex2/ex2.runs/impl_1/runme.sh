@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/impl_1'
+HD_PWD='C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

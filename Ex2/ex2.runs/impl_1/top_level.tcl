@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/impl_1/top_level.tcl"
+  variable script "C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/impl_1/top_level.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 5
   set_param runs.launchOptions { -jobs 20  }
   open_checkpoint top_level_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.cache/wt} [current_project]
 set_property TOP top_level [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

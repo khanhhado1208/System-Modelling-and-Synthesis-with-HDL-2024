@@ -89,27 +89,26 @@ begin
         data1 <= (others => '0'); -- set data1 to 4 bit '0000'
         
         -- apply reset
-        res1 <= '1';
+        res1 <= '0'; -- active low reset
         wait for 20 ns;  
-
-        -- release reset
-        res1 <= '0';
+        res1 <= '1'; -- release reset
         wait for 10 ns;
         
         -- test loading data with value 3
-        en1 <= '1'; -- enable counting
         load1 <= '1';  -- enable load
         data1 <= "0011";  -- assign data to 3 decimals 
         wait for 20 ns;
         load1 <= '0';  -- disable load
-        
+        wait for 20 ns;
         
         -- test counting up 
         en1 <= '1';   
         wait for 200 ns;  
+        en1 <= '0'; -- stop counting up
         
         -- test counting down 
         dir1 <= '1';   
+        en1 <= '1';
         wait for 100 ns; 
         
         -- test underflow 
@@ -120,14 +119,10 @@ begin
         wait for 10 ns;
 
         -- test reset while counting down
-        res1 <= '1';  -- enable reset
+        res1 <= '0';  -- enable reset(active low)
         wait for 50 ns;
-        res1 <= '0';  -- disable reset
+        res1 <= '1';  -- release reset
         wait for 10 ns;
-
-        -- test overflow in counting up mode again
-        dir1 <= '0';   -- set direction to count up
-        wait for 100 ns;
         
         -- test loading new data with value 5
         load1 <= '1';  -- enable load
@@ -136,11 +131,7 @@ begin
         load1 <= '0';  -- disable load
         wait for 20 ns;
         
-        -- disable enable if stop counting
-        en1 <='1';
-        wait for 100ns;
-        
-        -- enable again if it counting
+        -- enable counting again 
         en1 <= '1';
         wait for 100 ns;
         

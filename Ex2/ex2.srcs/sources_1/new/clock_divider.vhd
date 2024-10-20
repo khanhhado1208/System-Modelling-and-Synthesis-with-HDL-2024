@@ -30,21 +30,22 @@ entity Clock_Divider is
 end Clock_Divider;
 
 architecture bhv of Clock_Divider is
-    -- frequency 100 MHz divide to 1hz
-    signal count: integer := 1;
+    -- frequency 100 MHz divide to 1 Hz
+    signal count: integer := 0;
     signal tmp : std_logic := '0';
     constant DIVISOR : integer := 100000000 / 2; -- Divide 100 MHz down to 1 Hz
 begin
     process(clk, reset)
     begin
-        if(reset = '1') then
-            count <= count + 1;
+        if (reset = '0') then
+            count <= 0;
             tmp <= '0';
-        elsif(clk'event and clk = '1') then
-            count <= count + 1;
-            if (count = DIVISOR) then  
+        elsif (rising_edge(clk)) then
+            if (count = DIVISOR - 1) then  
                 tmp <= NOT tmp; -- invert clock_out value
                 count <= 0; -- reset counting
+            else
+                count <= count + 1;
             end if;
         end if;
         clock_out <= tmp;

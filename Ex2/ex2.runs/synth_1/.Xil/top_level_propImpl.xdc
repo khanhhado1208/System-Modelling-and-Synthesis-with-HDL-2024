@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/constrs_1/new/top.xdc} rfile:../../../ex2.srcs/constrs_1/new/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/constrs_1/new/top.xdc} rfile:../../../ex2.srcs/constrs_1/new/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports {clk}]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

@@ -3,18 +3,18 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Oct  9 14:16:27 2024
-# Process ID: 21524
-# Current directory: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/synth_1
+# Start of session at: Sun Oct 20 13:31:22 2024
+# Process ID: 37532
+# Current directory: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/synth_1
 # Command line: vivado.exe -log top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
-# Log file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/synth_1/top_level.vds
-# Journal file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/synth_1\vivado.jou
+# Log file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/synth_1/top_level.vds
+# Journal file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/synth_1\vivado.jou
 # Running On: Ha-Do, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 16780 MB
 #-----------------------------------------------------------
 source top_level.tcl -notrace
-create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 469.992 ; gain = 202.336
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/utils_1/imports/synth_1/top_level.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 469.871 ; gain = 201.391
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/utils_1/imports/synth_1/top_level.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/utils_1/imports/synth_1/top_level.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_level -part xc7z020clg484-1
 Starting synth_design
@@ -25,69 +25,67 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 33956
+INFO: [Synth 8-7075] Helper process launched with PID 32724
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1312.363 ; gain = 410.512
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1313.355 ; gain = 412.848
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/top_level.vhd:38]
-INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/clock_divider.vhd:26' bound to instance 'clk_div_inst' of component 'Clock_Divider' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/top_level.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/clock_divider.vhd:32]
-WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/clock_divider.vhd:38]
-WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/clock_divider.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/clock_divider.vhd:32]
-INFO: [Synth 8-3491] module 'universal_counter' declared at 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/universal_counter.vhd:34' bound to instance 'counter_inst' of component 'universal_counter' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/top_level.vhd:70]
-INFO: [Synth 8-638] synthesizing module 'universal_counter' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/universal_counter.vhd:45]
-WARNING: [Synth 8-614] signal 'count_t' is read in the process but is not in the sensitivity list [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/universal_counter.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'universal_counter' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/universal_counter.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'top_level' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/sources_1/new/top_level.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/top_level.vhd:38]
+INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/clock_divider.vhd:26' bound to instance 'clk_div_inst' of component 'Clock_Divider' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/top_level.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/clock_divider.vhd:32]
+WARNING: [Synth 8-614] signal 'tmp' is read in the process but is not in the sensitivity list [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/clock_divider.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/clock_divider.vhd:32]
+INFO: [Synth 8-3491] module 'universal_counter' declared at 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/universal_counter.vhd:34' bound to instance 'counter_inst' of component 'universal_counter' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/top_level.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'universal_counter' [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/universal_counter.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'universal_counter' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/universal_counter.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (0#1) [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/sources_1/new/top_level.vhd:38]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.613 ; gain = 500.762
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1402.168 ; gain = 501.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.613 ; gain = 500.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1402.168 ; gain = 501.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1402.613 ; gain = 500.762
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1402.168 ; gain = 501.660
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1402.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1402.168 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/constrs_1/new/top.xdc]
-Finished Parsing XDC File [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/constrs_1/new/top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Parsing XDC File [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1485.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1501.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1485.754 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1501.672 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -99,7 +97,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 7     
+	   2 Input   32 Bit        Muxes := 5     
 	   2 Input    1 Bit        Muxes := 2     
 	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -119,25 +117,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:37 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:50 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -155,37 +153,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -203,40 +201,37 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     2|
 |2     |CARRY4 |    24|
-|3     |LUT1   |    31|
-|4     |LUT2   |    64|
-|5     |LUT3   |    35|
-|6     |LUT4   |    13|
-|7     |LUT5   |     9|
-|8     |LUT6   |    82|
+|3     |LUT1   |    33|
+|4     |LUT2   |     2|
+|5     |LUT3   |     2|
+|6     |LUT4   |    14|
+|7     |LUT5   |    42|
+|8     |LUT6   |    33|
 |9     |FDCE   |    66|
-|10    |FDPE   |    32|
-|11    |LDC    |    32|
-|12    |IBUF   |     9|
-|13    |OBUF   |     5|
+|10    |IBUF   |     9|
+|11    |OBUF   |     5|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:56 . Memory (MB): peak = 1485.754 ; gain = 500.762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 1485.754 ; gain = 583.902
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1501.672 ; gain = 501.660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1501.672 ; gain = 601.164
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1485.754 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1501.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1485.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1501.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 32 instances were transformed.
-  LDC => LDCE: 32 instances
+No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 378a64c5
+Synth Design complete | Checksum: 47cd43b8
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:12 . Memory (MB): peak = 1485.754 ; gain = 990.918
-INFO: [Common 17-1381] The checkpoint 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/ex2/ex2.runs/synth_1/top_level.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1501.672 ; gain = 1006.941
+INFO: [Common 17-1381] The checkpoint 'C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex2_x/2407698-Do-Ha-Ex2/ex2.runs/synth_1/top_level.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct  9 14:18:06 2024...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 20 13:31:51 2024...

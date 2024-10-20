@@ -43,38 +43,39 @@ entity universal_counter is
 end universal_counter;
 
 architecture Behavioral of universal_counter is
-    signal count_t: integer := 0; -- declare count_t for counting
+    -- signal count_t: integer := 0; -- declare count_t for counting
 begin
 
 -- Create a process for handling clock, reset, load, dir
     process(clk, res)
+        variable count_t: integer := 0; -- declare count_t for counting
     begin
-        if (res = '1') then
-            count_t <= 0;  -- reset to counting = 0
+        if (res = '0') then -- set reset to 0 (active low)
+            count_t := 0;  -- reset to counting = 0
             over <= '0';   -- clear overflow to 0
         elsif (rising_edge(clk)) then
             -- load data into counter when load ='1' without counting
             if (load = '1') then
-                count_t <= TO_INTEGER(unsigned(data)); -- load count_t value from data
+                count_t := TO_INTEGER(unsigned(data)); -- load count_t value from data
                 over <= '0'; -- clear over to 0
             elsif (en = '1') then 
                 -- create direction condition
                 if (dir = '0') then
                     -- increasing counting
                     if (count_t = 15) then
-                        count_t <= 0; -- reset to 0 when overflow
+                        count_t := 0; -- reset to 0 when overflow
                         over <= '1'; -- enable overflow
                     else
-                        count_t <= count_t + 1; -- increase counting
+                        count_t := count_t + 1; -- increase counting
                         over <= '0'; -- clear overflow
                     end if;
                 else
                     -- decreasing counting
                     if (count_t = 0) then
-                        count_t <= 15; -- reset to 15 when underflow
+                        count_t := 15; -- reset to 15 when underflow
                         over <= '1'; -- enable underflow
                     else 
-                        count_t <= count_t - 1; -- decrease counting
+                        count_t := count_t - 1; -- decrease counting
                         over <= '0'; -- clear overflow 
                     end if;
                 end if;
