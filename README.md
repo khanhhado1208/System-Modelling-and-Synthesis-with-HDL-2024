@@ -44,3 +44,48 @@
 ## Part2:
 ####  Implement the code in part1 on the zedboard, setting up the switches as inputs, LEDs as outputs and RESET button as reset.
 ####  Reminder: Zedboard internal clock is 100MHz, you have to use a frequency divider to shorten the counting slot.
+
+# Exercise 3
+## MULTI-PROCESS SEQUENTIAL LOGIC IN A 2-DIGIT HEX COUNTER WITH PWM MODULE AND LED
+#### Dual digit hexadecimal counter
+#### In this exercise, we will extend the previous exercise to design a double-digit, bi-directional hexadecimal counter. Therefore, the counter range goes from 00 to FF. The requirements are the same than in the previous exercise, with some modifications:
+####  The count is separated into two outputs signals:
+#### counter_lo : out std_logic_vector(3 downto 0)
+#### counter_hi : out std_logic_vector(3 downto 0)
+####  Loading data occurs when both load_in and enable_in are b"1":
+#### counter_hi <= data_in (7 downto 4);
+#### counter_lo <= data_in (3 downto 0);
+#### In case you are not familiar with the hexadecimal number system, the table below shows the equivalency with the decimal, hexadecimal, and binary radix systems.
+<img width="477" alt="image" src="https://github.com/user-attachments/assets/edf242e7-380e-420c-823b-8eda8dc52504">
+
+#### Entity definition of counter should be:
+#### entity counter is
+#### port (
+#### clk : in std_logic; -- clock input, rising edge triggered
+#### reset : in std_logic; -- asynchronous reset, active low
+#### enable_in : in std_logic; -- active high
+#### load_in : in std_logic; -- synchronous load
+#### dir_in : in std_logic; -- 1 for down, 0 for up
+#### data_in : in std_logic_vector(7 downto 0); -- data input
+#### count_lo_out : out std_logic_vector(3 downto 0); -- data output, low nibble
+#### count_hi_out : out std_logic_vector(3 downto 0); -- data output, high nibble
+#### over_out : out std_logic -- set to 1 on overflow/underflow
+#### );
+<img width="1097" alt="image" src="https://github.com/user-attachments/assets/ab776983-79e7-43f8-8e17-bbabd3fe3af4">
+
+## Task 1
+#### Your task is to write the counter module architecture separated in two processes:
+#### Process 1: a combinatorial process with the logic as explained above, and
+#### Process 2: a frequency divider (Zedboard has a 100MHz clock rate). For this task, it is fine to use relatively fast clock, to visualize easier with simulation, e.g., 100 kHz. Write a test bench which covers all important behaviours of each input: reset, enable, load, dir and the respective outputs, count and over.
+## Task 2
+#### Design a Pulse Width Modulation (PWM) component with 8-bit resolution, where,
+#### entity pwm
+#### port (
+#### clk : in std_logic; -- clock input
+#### dc_in : in std_logic_vector(7 downto 0); -- duty cycle input
+#### pwm_out : out std_logic -- pwm output
+#### );
+#### Write a testbench for pwm, with a simulated clock cycle of 10ns.
+#### In your top.vhd file, map an 8-bit vector that combine the count_lo_out and count_hi_out ports of your counter entity with the dc_in port of the pwm entity; and map the pwm_out from pwm with an LDx port on the Zedboard in order to emulate the LED dimming effect. #### Use switches (SWx) as input ports of counter, and map data_in with a constant value (8-bit std_logic_vector) to test the load input. For reference, check the following articles about PWM and some example design:
+#### https://vhdlwhiz.com/pwm-controller/
+#### https://miscircuitos.com/pwm-with-zybo-in-vhdl/#Version_2_PWM02
