@@ -93,6 +93,7 @@ begin
         wait for 20 ns;  
         res1 <= '1'; -- release reset
         wait for 10 ns;
+        assert count_t1 = "0000" report "Reset failed: count not reset to 0000" severity error;
         
         -- test loading data with value 3
         load1 <= '1';  -- enable load
@@ -100,6 +101,7 @@ begin
         wait for 20 ns;
         load1 <= '0';  -- disable load
         wait for 20 ns;
+        assert count_t1 = "0011" report "Load failed: count not loaded with 0011" severity error;
         
         -- test counting up 
         en1 <= '1';   
@@ -110,6 +112,7 @@ begin
         dir1 <= '1';   
         en1 <= '1';
         wait for 100 ns; 
+        assert count_t1 < "1111" report "Counting down failed: count did not decrement" severity error;
         
         -- test underflow 
         load1 <='1'; -- enbale load
@@ -117,12 +120,14 @@ begin
         wait for 10 ns; 
         load1 <= '0'; -- disable load
         wait for 10 ns;
+        assert count_t1 = "0000" and over1 = '1' report "Underflow test failed: overflow flag not set correctly" severity error;
 
         -- test reset while counting down
         res1 <= '0';  -- enable reset(active low)
         wait for 50 ns;
         res1 <= '1';  -- release reset
         wait for 10 ns;
+        assert count_t1 = "0000" report "Reset during count down failed: count not reset to 0000" severity error;
         
         -- test loading new data with value 5
         load1 <= '1';  -- enable load
@@ -130,10 +135,12 @@ begin
         wait for 20 ns;
         load1 <= '0';  -- disable load
         wait for 20 ns;
+        assert count_t1 = "0101" report "Load with new data failed: count not loaded with 0101" severity error;
         
         -- enable counting again 
         en1 <= '1';
         wait for 100 ns;
+        assert count_t1 /= "0101" report "Counting after load failed: count not incrementing/decrementing from 0101" severity error;
         
         -- finish simulation
         wait;

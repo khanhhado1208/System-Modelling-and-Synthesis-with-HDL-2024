@@ -55,11 +55,11 @@ begin
             over <= '0';   -- clear overflow to 0
         elsif (rising_edge(clk)) then
             -- load data into counter when load ='1' without counting
-            if (load = '1') then
+            if(en = '1') then
+                if (load = '1') then
                 count_t := TO_INTEGER(unsigned(data)); -- load count_t value from data
                 over <= '0'; -- clear over to 0
-            elsif (en = '1') then 
-                -- create direction condition
+            else 
                 if (dir = '0') then
                     -- increasing counting
                     if (count_t = 15) then
@@ -81,6 +81,8 @@ begin
                 end if;
             end if;
         end if;
+    end if;
+        
         -- assign current value to output data
         count <= std_logic_vector(TO_UNSIGNED(count_t, 4)); -- reconvert count to vector 4 bits 
     end process; 
