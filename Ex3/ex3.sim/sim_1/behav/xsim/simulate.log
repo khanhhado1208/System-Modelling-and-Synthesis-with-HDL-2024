@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Error: Err, Pwm output should be 75%
+Time: 80 us  Iteration: 0  Process: /pwm_tb/process_test  File: C:/VHDL exercise/ex3/ex3/ex3.srcs/sim_1/new/pwm_tb.vhd
+Error: Err, Pwm output should be 100%
+Time: 100 us  Iteration: 0  Process: /pwm_tb/process_test  File: C:/VHDL exercise/ex3/ex3/ex3.srcs/sim_1/new/pwm_tb.vhd
