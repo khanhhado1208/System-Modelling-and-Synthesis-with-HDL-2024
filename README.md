@@ -72,6 +72,7 @@
 #### over_out : out std_logic -- set to 1 on overflow/underflow
 #### );
 <img width="1097" alt="image" src="https://github.com/user-attachments/assets/ab776983-79e7-43f8-8e17-bbabd3fe3af4">
+
 ## Task 1
 #### Your task is to write the counter module architecture separated in two processes:
 #### Process 1: a combinatorial process with the logic as explained above, and
