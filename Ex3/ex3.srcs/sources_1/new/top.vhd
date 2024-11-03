@@ -39,6 +39,7 @@ architecture Behavioral of top is
     signal count_lo   : std_logic_vector(3 downto 0); -- low nibble result from counter
     signal count_hi   : std_logic_vector(3 downto 0); -- high nibble result from counter
     signal clk_div    : std_logic; -- clock divider output
+    signal clk_pwm    : std_logic; -- clock input pwm
     
     component counter is 
         Port(
@@ -70,10 +71,11 @@ architecture Behavioral of top is
     end component;
     
 begin
+    clk_pwm <= GCLK; -- assign glbal clock to clk_pwm for 100mzh
     -- Instantiate clock divider component
     clk_divider_component: clock_divider
         port map(
-            clk_in  => GCLK,
+            clk_in  => clk_pwm,
             clk_out => clk_div
         );
         
@@ -94,10 +96,11 @@ begin
     -- Instantiate pwm component
     pwm_component: pwm
         port map(
-            clk     => clk_div,
+            clk     => clk_pwm,
             dc_in   => counter_t,
             pwm_out => LD0        
         );
+   
     -- assign low and high nible for count_t
     counter_t <= count_hi & count_lo;
 end Behavioral;

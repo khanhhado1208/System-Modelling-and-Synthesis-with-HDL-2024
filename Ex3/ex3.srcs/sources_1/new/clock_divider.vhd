@@ -34,7 +34,7 @@ end clock_divider;
 architecture behavior of clock_divider is
     signal counter: integer := 0;
     signal tmp : std_logic := '0';
-    constant DIVISOR: integer := 500; -- ivide 100 MHz down to 100 kHz
+    constant DIVISOR: integer := 1562500; -- Divide 100 MHz down to 64Hz
 begin
     clk_divider: process(clk_in)
     begin
