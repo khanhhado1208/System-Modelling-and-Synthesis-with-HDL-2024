@@ -66,35 +66,35 @@ begin
     begin
         -- test 0% duty cycle with dc_in=0
         dc_in1 <= "00000000";
-        wait for 20us;
+        wait for 5ms;
         assert pwm_out1 = '0' 
             report "Err, Pwm output should be 0%" 
         severity ERROR;
         
         -- test 25% duty cycle with dc_in=64
         dc_in1 <= "01000000"; -- 64 decimal 
-        wait for 20us;
+        wait for 10ms;
         assert pwm_out1 = '0' 
             report "Err, Pwm output should be 25%" 
         severity ERROR;
 
         -- test 50% duty cycle with dc_in=128
         dc_in1 <= "10000000"; -- 128 decimal
-        wait for 20us;
+        wait for 20ms;
         assert pwm_out1 = '0' 
             report "Err, Pwm output should be 50%" 
         severity ERROR;
 
         -- test 75% duty cycle with dc_in=192
         dc_in1 <= "11000000"; -- 192 decimal
-        wait for 20us;
+        wait for 80ms;
         assert pwm_out1 = '0' 
             report "Err, Pwm output should be 75%" 
         severity ERROR;
 
         -- test 100% duty cycle with dc_in=255
         dc_in1 <= "11111111"; -- 255 decimal
-        wait for 20 us;
+        wait for 120ms;
         assert pwm_out1 = '0' 
             report "Err, Pwm output should be 100%" 
         severity ERROR;

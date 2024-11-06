@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/VHDL exercise/ex3/ex3/ex3.srcs/constrs_1/new/top.xdc} rfile:../../../ex3.srcs/constrs_1/new/top.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/constrs_1/new/top.xdc} rfile:../../../ex3.srcs/constrs_1/new/top.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN Y9 [get_ports {GCLK}];  # "GCLK"
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

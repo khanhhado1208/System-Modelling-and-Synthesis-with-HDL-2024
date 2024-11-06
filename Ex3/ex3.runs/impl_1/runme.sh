@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/VHDL exercise/ex3/ex3/ex3.runs/impl_1'
+HD_PWD='C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

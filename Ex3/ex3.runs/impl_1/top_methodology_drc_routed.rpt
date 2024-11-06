@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Sun Oct 27 03:01:16 2024
+| Date         : Wed Nov  6 12:43:23 2024
 | Host         : Ha-Do running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,12 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 18
-+-----------+------------------+-----------------------------+------------+
-| Rule      | Severity         | Description                 | Violations |
-+-----------+------------------+-----------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell | 18         |
-+-----------+------------------+-----------------------------+------------+
+             Violations found: 10
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 9          |
+| TIMING-18 | Warning          | Missing input or output delay | 1          |
++-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -77,49 +78,9 @@ Non-clocked sequential cell
 The clock pin counter_component/over_out_reg/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#10 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#11 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#12 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#13 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#14 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#15 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#16 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#17 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_cnt_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#18 Critical Warning
-Non-clocked sequential cell  
-The clock pin pwm_component/pwm_out_reg/C is not reached by a timing clock
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on LD0 relative to the rising and/or falling clock edge(s) of GCLK.
 Related violations: <none>
 
 

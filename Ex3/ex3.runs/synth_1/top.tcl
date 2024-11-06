@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/VHDL exercise/ex3/ex3/ex3.runs/synth_1/top.tcl"
+  variable script "C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,30 +70,27 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 5
-set_param synth.incrementalSynthesisCache {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex3_extend/Ex3/.Xil/Vivado-3212-Ha-Do/incrSyn}
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/VHDL exercise/ex3/ex3/ex3.cache/wt} [current_project]
-set_property parent.project_path {C:/VHDL exercise/ex3/ex3/ex3.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {c:/VHDL exercise/ex3/ex3/ex3.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {C:/VHDL exercise/ex3/ex3/ex3.srcs/sources_1/new/clock_divider.vhd}
-  {C:/VHDL exercise/ex3/ex3/ex3.srcs/sources_1/new/counter.vhd}
-  {C:/VHDL exercise/ex3/ex3/ex3.srcs/sources_1/new/pwm.vhd}
-  {C:/VHDL exercise/ex3/ex3/ex3.srcs/sources_1/new/top.vhd}
+  {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/sources_1/new/clock_divider.vhd}
+  {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/sources_1/new/counter.vhd}
+  {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/sources_1/new/pwm.vhd}
+  {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/sources_1/new/top.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -104,12 +101,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/VHDL exercise/ex3/ex3/ex3.srcs/constrs_1/new/top.xdc}}
-set_property used_in_implementation false [get_files {{C:/VHDL exercise/ex3/ex3/ex3.srcs/constrs_1/new/top.xdc}}]
+read_xdc {{C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/constrs_1/new/top.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/constrs_1/new/top.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/VHDL exercise/ex3/ex3/ex3.srcs/utils_1/imports/synth_1/top.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.srcs/utils_1/imports/synth_1/top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

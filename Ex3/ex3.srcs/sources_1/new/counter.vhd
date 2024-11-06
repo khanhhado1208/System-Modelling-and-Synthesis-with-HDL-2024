@@ -55,22 +55,21 @@ begin
                 else
                     -- Increase counting, enable over_out when it reaches 255
                     if (dir_in = '0') then
-                        if (count_t = "11111111") then
+                        if (count_t = x"FF") then
                             count_t := (others => '0'); -- reset to 0 when overflow
                             over_out <= '1';           -- enable overflow
                         else
                             count_t := count_t + 1;    -- increase counting
                             over_out <= '0';           -- disable overflow
                         end if;
-                    else
-                        -- Decrease counting, enable over_out when it reaches 0
-                        if (count_t = 0) then 
-                            count_t := (others => '0'); -- reset to 0 when underflow
-                            over_out <= '1';           -- enable underflow
-                        else
-                            count_t := count_t - 1;    -- decrease counting
-                            over_out <= '0';           -- disable underflow 
-                        end if;
+                    else 
+                        if(count_t = x"00") then
+                            count_t := x"FF"; -- assign count_t to 255
+                            over_out <= '1'; -- enable overflow
+                        else 
+                            count_t := count_t - 1; -- decrease counter
+                            over_out <= '0'; -- disable overflow
+                        end if;     
                     end if;
                 end if;  
             end if;   

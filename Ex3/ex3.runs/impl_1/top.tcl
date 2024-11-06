@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/VHDL exercise/ex3/ex3/ex3.runs/impl_1/top.tcl"
+  variable script "C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,8 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -125,12 +123,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 5
-  set_param synth.incrementalSynthesisCache {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/HDL homework/ex3_extend/Ex3/.Xil/Vivado-3212-Ha-Do/incrSyn}
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 20  }
   open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir {C:/VHDL exercise/ex3/ex3/ex3.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.cache/wt} [current_project]
 set_property TOP top [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

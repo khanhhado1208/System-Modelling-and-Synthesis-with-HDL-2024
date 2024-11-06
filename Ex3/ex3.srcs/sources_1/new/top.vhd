@@ -58,7 +58,7 @@ architecture Behavioral of top is
     component clock_divider is
         Port (
             clk_in: in STD_LOGIC; -- clock input 100 MHz
-            clk_out: out STD_LOGIC  -- clock output 100 kHz
+            clk_out: out STD_LOGIC  -- clock output 64Hz
         );
     end component;
     

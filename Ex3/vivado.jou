@@ -1,0 +1,161 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Nov  6 12:25:05 2024
+# Process ID: 17304
+# Current directory: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23452 C:\Users\khanh\OneDrive - O365 Turun yliopisto\Desktop\VHDL\Ex3\ex3.xpr
+# Log file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/vivado.log
+# Journal file: C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3\vivado.jou
+# Running On: Ha-Do, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 16780 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/khanh/OneDrive - O365 Turun yliopisto/Desktop/VHDL/Ex3/ex3.runs/impl_1/top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source pwm_tb.tcl
+run 200 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top counter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source counter_tb.tcl
+run 2 ms
+add_force {/counter_tb/res1} -radix bin {0 0ns} -cancel_after 20ns
+run 40 ns
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pwm_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source pwm_tb.tcl
+run 4 ms
+relaunch_sim
+run 4 ms
+relaunch_sim
+run 4 ms
+run 4 ms
+run 4 ms
+relaunch_sim
+run 4 ms
+run 4 ms
+run 4 ms
+run 4 ms
+run 4 ms
+run 4 ms
+relaunch_sim
+run 40 ms
+relaunch_sim
+run 40 ms
+run 40 ms
+relaunch_sim
+run 80 ms
+relaunch_sim
+run 80 ms
+relaunch_sim
+run 80 ms
+relaunch_sim
+run 100 ms
+run 100 ms
+relaunch_sim
+run 100 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 20 ms
+run 40 ms
+relaunch_sim
+run 200 ms
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top counter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source counter_tb.tcl
+run 10 ms
+run 10 ms
+close_sim
