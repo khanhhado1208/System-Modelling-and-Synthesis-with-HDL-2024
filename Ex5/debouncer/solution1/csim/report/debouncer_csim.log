@@ -1,0 +1,18 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer-tb.cpp in debug mode
+   Compiling ../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp in debug mode
+csim.mk:84: recipe for target 'obj/debouncer.o' failed
+../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp: In function 'void debouncer(bool, bool&)':
+../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:5:1: error: 'pragma' was not declared in this scope
+ pragma HLS INTERFACE ap_none port=btn_in
+ ^~~~~~
+../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:36:9: error: 'state' was not declared in this scope
+  switch(state){
+         ^~~~~
+../../../../../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:76:2: error: 'state' was not declared in this scope
+  state = next_state;
+  ^~~~~
+make: *** [obj/debouncer.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

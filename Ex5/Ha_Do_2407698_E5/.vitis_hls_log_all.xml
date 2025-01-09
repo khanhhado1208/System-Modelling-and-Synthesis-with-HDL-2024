@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 's' is power-on initialization." projectName="Ha_Do_2407698_E5" solutionName="solution1" date="2024-12-11T13:03:45.702+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'dime_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Ha_Do_2407698_E5" solutionName="solution1" date="2024-12-11T13:03:45.626+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'nickel_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Ha_Do_2407698_E5" solutionName="solution1" date="2024-12-11T13:03:45.539+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'candy_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="Ha_Do_2407698_E5" solutionName="solution1" date="2024-12-11T13:03:45.495+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

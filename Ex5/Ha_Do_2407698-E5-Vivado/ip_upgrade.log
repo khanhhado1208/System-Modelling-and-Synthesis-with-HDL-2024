@@ -1,0 +1,100 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 11 13:05:10 2024
+| Host         : Ha-Do running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vending_machine_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_vending_machine_0_0 (xilinx.com:hls:vending_machine:1.0) from (Rev. 2113854106) to (Rev. 2113861144)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 11 13:05:10 2024
+| Host         : Ha-Do running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_debouncer_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_debouncer_1_1 (xilinx.com:hls:debouncer:1.0) from (Rev. 2113854145) to (Rev. 2113861139)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 11 13:05:10 2024
+| Host         : Ha-Do running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_debouncer_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_debouncer_1_0 (xilinx.com:hls:debouncer:1.0) from (Rev. 2113854145) to (Rev. 2113861139)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 11 13:05:10 2024
+| Host         : Ha-Do running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_debouncer_0_6'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_debouncer_0_6 (xilinx.com:hls:debouncer:1.0) from (Rev. 2113854145) to (Rev. 2113861139)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed Dec 11 13:05:10 2024
+| Host         : Ha-Do running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_debouncer_0_5'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_debouncer_0_5 (xilinx.com:hls:debouncer:1.0) from (Rev. 2113854145) to (Rev. 2113861139)
+

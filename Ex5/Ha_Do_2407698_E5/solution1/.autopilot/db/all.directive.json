@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "vending_machine",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "vending_machine"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/VHDL/Ex5/Ha_Do_2407698_E5/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "vending_machine",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "vending_machine"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/VHDL/Ex5/Ha_Do_2407698_E5/solution1/csynth.tcl",
+    "sourceLine": 19,
+    "success": true
+  }
+]

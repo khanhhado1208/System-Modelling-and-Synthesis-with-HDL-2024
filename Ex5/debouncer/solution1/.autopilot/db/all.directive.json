@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "debouncer",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "debouncer"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/VHDL/Ex5/debouncer/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "debouncer",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "debouncer"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/VHDL/Ex5/debouncer/solution1/csynth.tcl",
+    "sourceLine": 19,
+    "success": true
+  }
+]

@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" line="5" pragmaType="interface" parentfunction="debouncer" mode="ap_none" port="btn_in" name="" register="0"/>
+<pragma file="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" line="6" pragmaType="interface" parentfunction="debouncer" mode="ap_none" port="btn_out" name="" register="0"/>
+<pragma file="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" line="7" pragmaType="interface" parentfunction="debouncer" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>

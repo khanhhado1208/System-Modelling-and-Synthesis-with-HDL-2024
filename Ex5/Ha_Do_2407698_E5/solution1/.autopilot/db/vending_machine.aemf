@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1733915026089">
+  <ports id="1" name="nickel_in" type="PortType" originalName="nickel_in" coreId="224" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="dime_in" type="PortType" originalName="dime_in" coreId="1852142702" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="quarter_in" type="PortType" originalName="quarter_in" coreId="1852142702" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="thanks_in" type="PortType" originalName="thanks_in" coreId="2858867584" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="5" name="candy_out" type="PortType" originalName="candy_out" coreId="1852142702" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="nickel_out" type="PortType" originalName="nickel_out" coreId="1852142702" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="dime_out" type="PortType" originalName="dime_out" coreId="4294967295" bitwidth="2" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="93" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="95" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="97" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="99" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="100" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="103" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="104" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="122" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="134" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="137" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="138" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="139" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.14/@node_objs.0"/>
+  <edges id="141" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.15/@node_objs.0"/>
+  <edges id="146" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.15/@node_objs.1"/>
+  <edges id="147" source_obj="//@blocks.15/@node_objs.0" sink_obj="//@blocks.15/@node_objs.1"/>
+  <edges id="150" source_obj="//@blocks.15/@node_objs.1" sink_obj="//@blocks.15/@node_objs.2"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.15/@node_objs.3"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.12/@node_objs.0"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.13/@node_objs.0"/>
+  <edges id="160" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.13/@node_objs.1"/>
+  <edges id="161" source_obj="//@blocks.13/@node_objs.0" sink_obj="//@blocks.13/@node_objs.1"/>
+  <edges id="164" source_obj="//@blocks.13/@node_objs.1" sink_obj="//@blocks.13/@node_objs.2"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.13/@node_objs.3"/>
+  <edges id="166" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.11/@node_objs.0"/>
+  <edges id="174" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="175" source_obj="//@blocks.11/@node_objs.0" sink_obj="//@blocks.11/@node_objs.1"/>
+  <edges id="177" source_obj="//@blocks.11/@node_objs.1" sink_obj="//@blocks.11/@node_objs.2"/>
+  <edges id="178" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.11/@node_objs.3"/>
+  <edges id="179" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="182" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="187" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="188" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="191" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="193" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="196" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="201" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="202" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="205" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="208" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="209" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="210" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="211" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@blocks.17" sink_obj="//@blocks.16/@node_objs.0"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="226" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="228" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="230" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="234" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="236" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="243" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="245" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="247" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="249" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="253" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.17/@node_objs.0"/>
+  <edges id="254" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="255" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="256" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="257" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="263" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="265" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="266" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="268" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="269" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="270" source_obj="//@blocks.11/@node_objs.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="272" source_obj="//@blocks.13/@node_objs.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="274" source_obj="//@blocks.15/@node_objs.2" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="281" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="285" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="287" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.17/@node_objs.1"/>
+  <edges id="290" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="293" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="296" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="298" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="300" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="302" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="304" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="306" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="308" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="310" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="312" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="324" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.17/@node_objs.2"/>
+  <edges id="326" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="332" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="334" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="336" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="338" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="340" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="342" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="344" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="346" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="348" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="350" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="352" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.17/@node_objs.3"/>
+  <edges id="359" source_obj="//@blocks.17/@node_objs.1" sink_obj="//@blocks.17/@node_objs.4"/>
+  <edges id="360" sink_obj="//@blocks.17/@node_objs.4"/>
+  <edges id="363" source_obj="//@blocks.17/@node_objs.5" sink_obj="//@ports.4"/>
+  <edges id="364" source_obj="//@blocks.17/@node_objs.2" sink_obj="//@blocks.17/@node_objs.5"/>
+  <edges id="366" source_obj="//@blocks.17/@node_objs.6" sink_obj="//@ports.5"/>
+  <edges id="367" source_obj="//@blocks.17/@node_objs.3" sink_obj="//@blocks.17/@node_objs.6"/>
+  <edges id="370" source_obj="//@blocks.17/@node_objs.7" sink_obj="//@ports.6"/>
+  <edges id="371" source_obj="//@blocks.17/@node_objs.0" sink_obj="//@blocks.17/@node_objs.7"/>
+  <edges id="548" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.16"/>
+  <edges id="549" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.14"/>
+  <edges id="550" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.12"/>
+  <edges id="551" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.10"/>
+  <edges id="552" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.8"/>
+  <edges id="553" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="554" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="555" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="556" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="557" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="558" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.17"/>
+  <edges id="559" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="560" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.17"/>
+  <edges id="561" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.17"/>
+  <edges id="562" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.17"/>
+  <edges id="563" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.17"/>
+  <edges id="564" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.17"/>
+  <edges id="565" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.17"/>
+  <edges id="566" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="567" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.17"/>
+  <edges id="568" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.17"/>
+  <edges id="569" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="570" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.17"/>
+  <edges id="571" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.17"/>
+  <edges id="572" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.11"/>
+  <edges id="573" edge_type="CtrlEdge" source_obj="//@blocks.11" sink_obj="//@blocks.17"/>
+  <edges id="574" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.17"/>
+  <edges id="575" edge_type="CtrlEdge" source_obj="//@blocks.12" sink_obj="//@blocks.13"/>
+  <edges id="576" edge_type="CtrlEdge" source_obj="//@blocks.13" sink_obj="//@blocks.17"/>
+  <edges id="577" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.17"/>
+  <edges id="578" edge_type="CtrlEdge" source_obj="//@blocks.14" sink_obj="//@blocks.15"/>
+  <edges id="579" edge_type="CtrlEdge" source_obj="//@blocks.15" sink_obj="//@blocks.17"/>
+  <edges id="580" edge_type="CtrlEdge" source_obj="//@blocks.16" sink_obj="//@blocks.17"/>
+  <edges id="581" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.17/@node_objs.4"/>
+  <blocks id="32" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.default</controlOutputObjs>
+    <controlOutputObjs>sw.bb</controlOutputObjs>
+    <controlOutputObjs>sw.bb7</controlOutputObjs>
+    <controlOutputObjs>sw.bb18</controlOutputObjs>
+    <controlOutputObjs>sw.bb29</controlOutputObjs>
+    <controlOutputObjs>sw.bb40</controlOutputObjs>
+    <controlOutputObjs>sw.bb51</controlOutputObjs>
+    <controlOutputObjs>sw.bb53</controlOutputObjs>
+    <controlOutputObjs>sw.bb55</controlOutputObjs>
+    <controlOutputObjs>sw.bb57</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>sw.bb61</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="thanks_in_read" lineNumber="31" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="745303137" contextFuncName="vending_machine" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="31" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>thanks_in</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="quarter_in_read" lineNumber="31" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1819176804" contextFuncName="vending_machine" bitwidth="1" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="31" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>quarter_in</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="dime_in_read" lineNumber="31" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1852776549" contextFuncName="vending_machine" bitwidth="1" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="31" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>dime_in</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="nickel_in_read" lineNumber="31" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1898782752" contextFuncName="vending_machine" bitwidth="1" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="31" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>nickel_in</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="s_next" lineNumber="60" originalName="s_next" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1886352501" contextFuncName="vending_machine" bitwidth="32" opcode="load" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="60" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataOutputObjs>switch</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="or_ln74" lineNumber="74" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="or_ln74_fu_372_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="vending_machine" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="74" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="_ln67" lineNumber="67" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="300" contextFuncName="vending_machine" opcode="switch" m_display="0" m_delay="2.6" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="67" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>sw.default</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb7</controlInputObjs>
+      <controlInputObjs>sw.bb18</controlInputObjs>
+      <controlInputObjs>sw.bb29</controlInputObjs>
+      <controlInputObjs>sw.bb40</controlInputObjs>
+      <controlInputObjs>sw.bb51</controlInputObjs>
+      <controlInputObjs>sw.bb53</controlInputObjs>
+      <controlInputObjs>sw.bb55</controlInputObjs>
+      <controlInputObjs>sw.bb57</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+      <controlInputObjs>sw.bb61</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>31</validLinenumbers>
+      <validLinenumbers>60</validLinenumbers>
+      <validLinenumbers>74</validLinenumbers>
+      <validLinenumbers>67</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="35" name="sw.bb61" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="select_ln171" lineNumber="171" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln171_fu_378_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="32" opcode="select" m_display="0" m_delay="1.21" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="171" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln171" lineNumber="171" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1919509612" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="171" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>171</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name="sw.bb57" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="br_ln156" lineNumber="156" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1886352501" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="156" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>156</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="sw.bb55" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln150" lineNumber="150" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="2843768568" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="150" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>150</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="41" name="sw.bb53" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln144" lineNumber="144" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="980706665" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="144" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>144</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="43" name="sw.bb51" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln138" lineNumber="138" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="138" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="45" name="sw.bb40" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>if.else43</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln124" lineNumber="124" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="124" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>if.else43</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="50" name="if.else43" type="BlockType">
+    <controlInputObjs>sw.bb40</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="select_ln126_1" lineNumber="126" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln126_1_fu_387_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="4" opcode="select" m_display="0" m_topoIndex="15" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="126" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="select_ln126" lineNumber="126" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln126_fu_395_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="4" opcode="select" m_display="0" m_delay="1.02" m_topoIndex="16" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="126" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln126" lineNumber="126" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="zext_ln126_fu_403_p1" coreId="0" contextFuncName="vending_machine" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="126" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="br_ln126" lineNumber="126" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="126" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>126</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="52" name="sw.bb29" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>if.else32</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="br_ln111" lineNumber="111" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="111" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>if.else32</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>111</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="57" name="if.else32" type="BlockType">
+    <controlInputObjs>sw.bb29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="select_ln113_1" lineNumber="113" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln113_1_fu_408_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="4" opcode="select" m_display="0" m_topoIndex="20" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="113" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="select_ln113" lineNumber="113" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln113_fu_416_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="4" opcode="select" m_display="0" m_delay="1.02" m_topoIndex="21" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="113" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="zext_ln113" lineNumber="113" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="zext_ln113_fu_424_p1" coreId="0" contextFuncName="vending_machine" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="113" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln113" lineNumber="113" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="113" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>113</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="59" name="sw.bb18" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>if.else21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="br_ln98" lineNumber="98" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="2844236811" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="98" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>if.else21</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>98</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="64" name="if.else21" type="BlockType">
+    <controlInputObjs>sw.bb18</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="select_ln100_1" lineNumber="100" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln100_1_fu_429_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_topoIndex="25" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="100" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="select_ln100" lineNumber="100" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln100_fu_437_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_delay="0.98" m_topoIndex="26" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="100" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln100" lineNumber="100" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="zext_ln100_fu_445_p1" coreId="2858880171" contextFuncName="vending_machine" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="100" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="br_ln100" lineNumber="100" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="2845415683" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="100" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>100</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="66" name="sw.bb7" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>if.else10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="br_ln85" lineNumber="85" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="85" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>if.else10</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>85</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="71" name="if.else10" type="BlockType">
+    <controlInputObjs>sw.bb7</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln87_1" lineNumber="87" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln87_1_fu_450_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_topoIndex="30" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="87" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="select_ln87" lineNumber="87" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln87_fu_458_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_delay="0.98" m_topoIndex="31" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="87" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="zext_ln87" lineNumber="87" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="zext_ln87_fu_466_p1" coreId="1702125923" contextFuncName="vending_machine" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="87" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="br_ln87" lineNumber="87" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="2822735120" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="87" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>87</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="73" name="sw.bb" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>if.else</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="br_ln72" lineNumber="72" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="1701602560" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="72" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>72</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="78" name="if.else" type="BlockType">
+    <controlInputObjs>sw.bb</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="select_ln74_1" lineNumber="74" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln74_1_fu_471_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_topoIndex="35" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="74" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="select_ln74" lineNumber="74" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="select_ln74_fu_479_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="vending_machine" bitwidth="3" opcode="select" m_display="0" m_delay="0.98" m_topoIndex="36" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="74" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="zext_ln74" lineNumber="74" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." rtlName="zext_ln74_fu_487_p1" coreId="0" contextFuncName="vending_machine" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="74" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="br_ln74" lineNumber="74" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="74" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>74</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="80" name="sw.default" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="br_ln173" lineNumber="173" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="br" m_display="0" m_delay="2.6" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="173" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>173</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="90" name="sw.epilog" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>sw.bb61</controlInputObjs>
+    <controlInputObjs>sw.bb57</controlInputObjs>
+    <controlInputObjs>sw.bb55</controlInputObjs>
+    <controlInputObjs>sw.bb53</controlInputObjs>
+    <controlInputObjs>sw.bb51</controlInputObjs>
+    <controlInputObjs>sw.bb40</controlInputObjs>
+    <controlInputObjs>if.else43</controlInputObjs>
+    <controlInputObjs>sw.bb29</controlInputObjs>
+    <controlInputObjs>if.else32</controlInputObjs>
+    <controlInputObjs>sw.bb18</controlInputObjs>
+    <controlInputObjs>if.else21</controlInputObjs>
+    <controlInputObjs>sw.bb7</controlInputObjs>
+    <controlInputObjs>if.else10</controlInputObjs>
+    <controlInputObjs>sw.bb</controlInputObjs>
+    <controlInputObjs>if.else</controlInputObjs>
+    <controlInputObjs>sw.default</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="dime_out_local" originalName="dime_out_local" coreId="0" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>sw.default</controlInputObjs>
+      <controlInputObjs>sw.bb61</controlInputObjs>
+      <controlInputObjs>sw.bb57</controlInputObjs>
+      <controlInputObjs>sw.bb55</controlInputObjs>
+      <controlInputObjs>sw.bb53</controlInputObjs>
+      <controlInputObjs>sw.bb51</controlInputObjs>
+      <controlInputObjs>if.else43</controlInputObjs>
+      <controlInputObjs>if.else32</controlInputObjs>
+      <controlInputObjs>if.else21</controlInputObjs>
+      <controlInputObjs>if.else10</controlInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb7</controlInputObjs>
+      <controlInputObjs>sw.bb18</controlInputObjs>
+      <controlInputObjs>sw.bb29</controlInputObjs>
+      <controlInputObjs>sw.bb40</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="s_next_1" originalName="s_next" coreId="0" bitwidth="32" opcode="phi" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>sw.default</controlInputObjs>
+      <controlInputObjs>sw.bb61</controlInputObjs>
+      <controlInputObjs>sw.bb57</controlInputObjs>
+      <controlInputObjs>sw.bb55</controlInputObjs>
+      <controlInputObjs>sw.bb53</controlInputObjs>
+      <controlInputObjs>sw.bb51</controlInputObjs>
+      <controlInputObjs>if.else43</controlInputObjs>
+      <controlInputObjs>if.else32</controlInputObjs>
+      <controlInputObjs>if.else21</controlInputObjs>
+      <controlInputObjs>if.else10</controlInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb7</controlInputObjs>
+      <controlInputObjs>sw.bb18</controlInputObjs>
+      <controlInputObjs>sw.bb29</controlInputObjs>
+      <controlInputObjs>sw.bb40</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="candy_out_local" originalName="candy_out_local" coreId="0" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>sw.default</controlInputObjs>
+      <controlInputObjs>sw.bb61</controlInputObjs>
+      <controlInputObjs>sw.bb57</controlInputObjs>
+      <controlInputObjs>sw.bb55</controlInputObjs>
+      <controlInputObjs>sw.bb53</controlInputObjs>
+      <controlInputObjs>sw.bb51</controlInputObjs>
+      <controlInputObjs>if.else43</controlInputObjs>
+      <controlInputObjs>if.else32</controlInputObjs>
+      <controlInputObjs>if.else21</controlInputObjs>
+      <controlInputObjs>if.else10</controlInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb7</controlInputObjs>
+      <controlInputObjs>sw.bb18</controlInputObjs>
+      <controlInputObjs>sw.bb29</controlInputObjs>
+      <controlInputObjs>sw.bb40</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="nickel_out_local" originalName="nickel_out_local" coreId="376" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>sw.default</controlInputObjs>
+      <controlInputObjs>sw.bb61</controlInputObjs>
+      <controlInputObjs>sw.bb57</controlInputObjs>
+      <controlInputObjs>sw.bb55</controlInputObjs>
+      <controlInputObjs>sw.bb53</controlInputObjs>
+      <controlInputObjs>sw.bb51</controlInputObjs>
+      <controlInputObjs>if.else43</controlInputObjs>
+      <controlInputObjs>if.else32</controlInputObjs>
+      <controlInputObjs>if.else21</controlInputObjs>
+      <controlInputObjs>if.else10</controlInputObjs>
+      <controlInputObjs>if.else</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb7</controlInputObjs>
+      <controlInputObjs>sw.bb18</controlInputObjs>
+      <controlInputObjs>sw.bb29</controlInputObjs>
+      <controlInputObjs>sw.bb40</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="s_write_ln176" lineNumber="176" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="store" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="176" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="candy_out_write_ln177" lineNumber="177" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="write" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="177" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>candy_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="nickel_out_write_ln178" lineNumber="178" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="write" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="178" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>nickel_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="dime_out_write_ln179" lineNumber="179" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="write" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="179" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>dime_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="_ln181" lineNumber="181" fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" fileDirectory="../." coreId="0" contextFuncName="vending_machine" opcode="ret" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp" linenumber="181" fileDirectory="C:\VHDL\Ex5" functionName="vending_machine"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp">
+      <validLinenumbers>176</validLinenumbers>
+      <validLinenumbers>177</validLinenumbers>
+      <validLinenumbers>178</validLinenumbers>
+      <validLinenumbers>179</validLinenumbers>
+      <validLinenumbers>181</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="dime_out_local_reg_147">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="s_next_1_reg_204">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="nickel_out_local_reg_310">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="candy_out_local_reg_253">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <expressionNodes realName="zext_ln113_fu_424">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="candy_out_local_phi_fu_256">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln113_fu_416">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln74_fu_372">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln74_fu_487">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln74_1_fu_471">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln126_1_fu_387">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln171_fu_378">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln126_fu_395">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln87_1_fu_450">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="nickel_out_local_phi_fu_313">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln100_fu_445">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln74_fu_479">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln100_fu_437">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dime_out_local_phi_fu_150">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="s_next_1_phi_fu_207">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln87_fu_458">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln100_1_fu_429">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln126_fu_403">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln113_1_fu_408">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln87_fu_466">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln176_store_fu_492">
+    <nodeIds>85</nodeIds>
+  </ioNodes>
+  <ioNodes realName="dime_in_read_read_fu_114">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="quarter_in_read_read_fu_108">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln178_write_fu_133">
+    <nodeIds>87</nodeIds>
+  </ioNodes>
+  <ioNodes realName="nickel_in_read_read_fu_120">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="s_next_load_fu_367">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="thanks_in_read_read_fu_102">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln177_write_fu_126">
+    <nodeIds>86</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln179_write_fu_140">
+    <nodeIds>88</nodeIds>
+  </ioNodes>
+  <ioPorts name="candy_out">
+    <contents name="write">
+      <nodeIds>86</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dime_in">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dime_out">
+    <contents name="write">
+      <nodeIds>88</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="nickel_in">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="nickel_out">
+    <contents name="write">
+      <nodeIds>87</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="quarter_in">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="thanks_in">
+    <contents name="read">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="vending_machine" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>43</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <basicBlocks>50</basicBlocks>
+      <basicBlocks>52</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>59</basicBlocks>
+      <basicBlocks>64</basicBlocks>
+      <basicBlocks>66</basicBlocks>
+      <basicBlocks>71</basicBlocks>
+      <basicBlocks>73</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <basicBlocks>80</basicBlocks>
+      <basicBlocks>90</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

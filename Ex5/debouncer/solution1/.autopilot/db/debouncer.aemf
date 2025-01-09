@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1733914758919">
+  <ports id="1" name="btn_in" type="PortType" originalName="btn_in" coreId="1852142702" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="btn_out" type="PortType" originalName="btn_out" coreId="1852142702" bitwidth="1" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="49" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="50" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="52" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="55" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="58" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="63" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="64" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="65" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="66" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="67" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="70" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="71" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="72" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="75" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="79" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="80" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="81" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="83" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="85" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="88" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="89" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="90" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="94" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="95" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="101" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="102" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="103" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="105" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="107" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="120" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="121" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="122" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="123" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="124" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="127" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@ports.1"/>
+  <edges id="128" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="201" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="203" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="208" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6"/>
+  <edges id="209" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="210" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="211" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="212" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="213" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="214" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="215" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="216" edge_type="VirtEdge" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <blocks id="15" name="entry" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <controlOutputObjs>sw.bb</controlOutputObjs>
+    <controlOutputObjs>sw.bb1</controlOutputObjs>
+    <controlOutputObjs>sw.bb15</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="btn_in_read" lineNumber="4" originalName="btn_in" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="2081501432" contextFuncName="debouncer" bitwidth="1" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="4" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>btn_in</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="state_load" lineNumber="36" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="2096019360" contextFuncName="debouncer" bitwidth="2" opcode="load" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="36" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataOutputObjs>switch</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="_ln36" lineNumber="36" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="44017392" contextFuncName="debouncer" opcode="switch" m_display="0" m_delay="1.86" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="36" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>sw.bb1</controlInputObjs>
+      <controlInputObjs>sw.bb15</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>4</validLinenumbers>
+      <validLinenumbers>36</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="19" name="sw.bb15" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="select_ln62" lineNumber="62" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="select_ln62_fu_105_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="debouncer" bitwidth="2" opcode="select" m_display="0" m_delay="0.99" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="62" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="next_state_write_ln64" lineNumber="64" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="757810640" contextFuncName="debouncer" opcode="store" m_display="0" m_delay="1.82" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="64" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="br_ln69" lineNumber="69" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="44020656" contextFuncName="debouncer" opcode="br" m_display="0" m_delay="1.7" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="69" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>62</validLinenumbers>
+      <validLinenumbers>64</validLinenumbers>
+      <validLinenumbers>69</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="24" name="sw.bb1" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>if.then5</controlOutputObjs>
+    <controlOutputObjs>if.else6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="counter_load" lineNumber="48" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" bitwidth="64" opcode="load" m_display="0" m_isOnCriticalPath="true" m_isStartOfPath="true" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="48" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln48" lineNumber="48" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="icmp_ln48_fu_123_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="debouncer" bitwidth="1" opcode="icmp" m_display="0" m_delay="3.52" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="48" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="and_ln48" lineNumber="48" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="and_ln48_fu_129_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="debouncer" bitwidth="1" opcode="and" m_display="0" m_delay="0.97" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="48" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln48" lineNumber="48" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="br" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="48" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>if.else6</controlInputObjs>
+      <controlInputObjs>if.then5</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>48</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name="if.else6" type="BlockType">
+    <controlInputObjs>sw.bb1</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln52" lineNumber="52" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="icmp_ln52_fu_135_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="debouncer" bitwidth="1" opcode="icmp" m_display="0" m_delay="3.52" m_isOnCriticalPath="true" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="52" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="and_ln52" lineNumber="52" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="and_ln52_fu_141_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="debouncer" bitwidth="1" opcode="and" m_display="0" m_isOnCriticalPath="true" m_topoIndex="12" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="52" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="select_ln52" lineNumber="52" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="select_ln52_fu_147_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="debouncer" bitwidth="2" opcode="select" m_display="0" m_delay="0.99" m_isOnCriticalPath="true" m_topoIndex="13" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="52" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="next_state_write_ln53" lineNumber="53" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="48157864" contextFuncName="debouncer" opcode="store" m_display="0" m_delay="1.82" m_isOnCriticalPath="true" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="53" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln0" coreId="0" opcode="br" m_display="0" m_delay="1.7" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="if.then5" type="BlockType">
+    <controlInputObjs>sw.bb1</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="next_counter" lineNumber="49" originalName="next_counter" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="next_counter_fu_161_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="debouncer" bitwidth="64" opcode="add" m_display="0" m_delay="3.52" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="49" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="next_state_write_ln50" lineNumber="50" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="store" m_display="0" m_delay="1.82" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="50" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln52" lineNumber="52" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="1226965113" contextFuncName="debouncer" opcode="br" m_display="0" m_delay="1.7" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="52" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>49</validLinenumbers>
+      <validLinenumbers>50</validLinenumbers>
+      <validLinenumbers>52</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="38" name="sw.bb" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>sw.epilog</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="zext_ln40" lineNumber="40" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." rtlName="zext_ln40_fu_174_p1" coreId="0" contextFuncName="debouncer" bitwidth="2" opcode="zext" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="40" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="next_state_write_ln40" lineNumber="40" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="876245104" contextFuncName="debouncer" opcode="store" m_display="0" m_delay="1.82" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="40" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>zext</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="br_ln45" lineNumber="45" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="br" m_display="0" m_delay="1.7" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="45" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <controlInputObjs>sw.epilog</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>40</validLinenumbers>
+      <validLinenumbers>45</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="46" name="sw.epilog" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>sw.bb15</controlInputObjs>
+    <controlInputObjs>if.else6</controlInputObjs>
+    <controlInputObjs>if.then5</controlInputObjs>
+    <controlInputObjs>sw.bb</controlInputObjs>
+    <controlOutputObjs>switch</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="next_counter_1" originalName="next_counter" coreId="0" bitwidth="64" opcode="phi" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>sw.bb15</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>if.then5</controlInputObjs>
+      <controlInputObjs>if.else6</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="out_tmp" originalName="out_tmp" coreId="0" bitwidth="1" opcode="phi" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <dataOutputObjs>write</dataOutputObjs>
+      <controlInputObjs>sw.bb15</controlInputObjs>
+      <controlInputObjs>sw.bb</controlInputObjs>
+      <controlInputObjs>if.then5</controlInputObjs>
+      <controlInputObjs>if.else6</controlInputObjs>
+      <controlInputObjs>entry</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="next_state_load" lineNumber="76" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" bitwidth="2" opcode="load" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="76" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="state_write_ln76" lineNumber="76" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="store" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="76" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>load</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="counter_write_ln77" lineNumber="77" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="570456421" contextFuncName="debouncer" opcode="store" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="77" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="btn_out_write_ln78" lineNumber="78" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="write" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="78" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>btn_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="_ln79" lineNumber="79" fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" fileDirectory="../." coreId="0" contextFuncName="debouncer" opcode="ret" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp" linenumber="79" fileDirectory="C:\VHDL\Ex5" functionName="debouncer"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp">
+      <validLinenumbers>76</validLinenumbers>
+      <validLinenumbers>77</validLinenumbers>
+      <validLinenumbers>78</validLinenumbers>
+      <validLinenumbers>79</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="out_tmp_reg_80">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="next_counter_1_reg_61">
+    <nodeIds>39</nodeIds>
+  </regnodes>
+  <expressionNodes realName="icmp_ln48_fu_123">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_counter_fu_161">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln48_fu_129">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="next_counter_1_phi_fu_64">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_tmp_phi_fu_83">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln52_fu_141">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln52_fu_147">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln62_fu_105">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln52_fu_135">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln40_fu_174">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="btn_in_read_read_fu_48">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="next_state_load_load_fu_184">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="state_load_load_fu_101">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln53_store_fu_155">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln78_write_fu_54">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="counter_load_load_fu_119">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln77_store_fu_194">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln76_store_fu_188">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln40_store_fu_178">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_168">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln64_store_fu_113">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioPorts name="btn_in">
+    <contents name="read">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="btn_out">
+    <contents name="write">
+      <nodeIds>44</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="debouncer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>15</basicBlocks>
+      <basicBlocks>19</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>38</basicBlocks>
+      <basicBlocks>46</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

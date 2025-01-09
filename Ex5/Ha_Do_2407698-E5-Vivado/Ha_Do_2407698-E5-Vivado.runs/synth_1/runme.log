@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 468.215 ; gain = 198.945
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/pulse_detector-vitishls-ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/debouncer'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/Ha_Do_2407698_E5'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/pulse_generator-vitishls-ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2244
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1320.270 ; gain = 410.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:15' bound to instance 'design_1_i' of component 'design_1' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:34]
+INFO: [Synth 8-3491] module 'design_1_debouncer_0_5' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_0_5_stub.vhdl:6' bound to instance 'debouncer_0' of component 'design_1_debouncer_0_5' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_0_5' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_0_5_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_debouncer_0_6' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_0_6_stub.vhdl:6' bound to instance 'debouncer_1' of component 'design_1_debouncer_0_6' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_0_6' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_0_6_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_debouncer_1_0' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_1_0_stub.vhdl:6' bound to instance 'debouncer_2' of component 'design_1_debouncer_1_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_1_0' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_debouncer_1_1' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_1_1_stub.vhdl:6' bound to instance 'debouncer_3' of component 'design_1_debouncer_1_1' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'design_1_debouncer_1_1' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_debouncer_1_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_pulse_detector_0_0' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_0_stub.vhdl:6' bound to instance 'pulse_detector_0' of component 'design_1_pulse_detector_0_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_detector_0_0' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_pulse_detector_0_1' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_1_stub.vhdl:6' bound to instance 'pulse_detector_1' of component 'design_1_pulse_detector_0_1' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_detector_0_1' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_pulse_detector_0_2' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_2_stub.vhdl:6' bound to instance 'pulse_detector_2' of component 'design_1_pulse_detector_0_2' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_detector_0_2' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_2_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_pulse_detector_0_3' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_3_stub.vhdl:6' bound to instance 'pulse_detector_3' of component 'design_1_pulse_detector_0_3' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_detector_0_3' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_detector_0_3_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_pulse_generator_0_0' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_0_stub.vhdl:6' bound to instance 'pulse_generator_0' of component 'design_1_pulse_generator_0_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:254]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_generator_0_0' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_pulse_generator_0_2' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_2_stub.vhdl:6' bound to instance 'pulse_generator_1' of component 'design_1_pulse_generator_0_2' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_generator_0_2' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_2_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_pulse_generator_0_3' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_3_stub.vhdl:6' bound to instance 'pulse_generator_2' of component 'design_1_pulse_generator_0_3' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_generator_0_3' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_3_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_pulse_generator_0_4' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_4_stub.vhdl:6' bound to instance 'pulse_generator_3' of component 'design_1_pulse_generator_0_4' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'design_1_pulse_generator_0_4' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_pulse_generator_0_4_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_vending_machine_0_0' declared at 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_vending_machine_0_0_stub.vhdl:6' bound to instance 'vending_machine_0' of component 'design_1_vending_machine_0_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'design_1_vending_machine_0_0' [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/.Xil/Vivado-12492-Ha-Do/realtime/design_1_vending_machine_0_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:294]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (0#1) [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_1' declared at 'c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:53' bound to instance 'xlslice_1' of component 'design_1_xlslice_0_1' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:299]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_1' [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_1' (0#1) [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/synth/design_1.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:30]
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_2_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1410.988 ; gain = 500.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1410.988 ; gain = 500.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1410.988 ; gain = 500.844
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1410.988 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_0/design_1_pulse_generator_0_0/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_0'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_0/design_1_pulse_generator_0_0/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_0'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_2/design_1_pulse_generator_0_2/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_1'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_2/design_1_pulse_generator_0_2/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_1'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_3/design_1_pulse_generator_0_3/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_2'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_3/design_1_pulse_generator_0_3/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_2'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_4/design_1_pulse_generator_0_4/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_3'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_generator_0_4/design_1_pulse_generator_0_4/design_1_pulse_generator_0_0_in_context.xdc] for cell 'design_1_i/pulse_generator_3'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_0/design_1_pulse_detector_0_0/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_0'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_0/design_1_pulse_detector_0_0/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_0'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_1/design_1_pulse_detector_0_1/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_1'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_1/design_1_pulse_detector_0_1/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_1'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_2/design_1_pulse_detector_0_2/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_2'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_2/design_1_pulse_detector_0_2/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_2'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_3/design_1_pulse_detector_0_3/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_3'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_pulse_detector_0_3/design_1_pulse_detector_0_3/design_1_pulse_detector_0_0_in_context.xdc] for cell 'design_1_i/pulse_detector_3'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_5/design_1_debouncer_0_5/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_0'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_5/design_1_debouncer_0_5/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_0'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_6/design_1_debouncer_0_6/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_1'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_0_6/design_1_debouncer_0_6/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_1'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_2'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_1_0/design_1_debouncer_1_0/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_2'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_1_1/design_1_debouncer_1_1/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_3'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_debouncer_1_1/design_1_debouncer_1_1/design_1_debouncer_0_5_in_context.xdc] for cell 'design_1_i/debouncer_3'
+Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_vending_machine_0_0/design_1_vending_machine_0_0/design_1_vending_machine_0_0_in_context.xdc] for cell 'design_1_i/vending_machine_0'
+Finished Parsing XDC File [c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.gen/sources_1/bd/design_1/ip/design_1_vending_machine_0_0/design_1_vending_machine_0_0/design_1_vending_machine_0_0_in_context.xdc] for cell 'design_1_i/vending_machine_0'
+Parsing XDC File [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LD3'. [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc:178]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc:375]
+Finished Parsing XDC File [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.srcs/constrs_1/new/vending_machine.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1424.664 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_generator_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_generator_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_generator_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_detector_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_detector_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_detector_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/pulse_detector_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/debouncer_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/debouncer_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/debouncer_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/debouncer_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/vending_machine_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 1424.664 ; gain = 514.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_debouncer_0_5       |         1|
+|2     |design_1_debouncer_0_6       |         1|
+|3     |design_1_debouncer_1_0       |         1|
+|4     |design_1_debouncer_1_1       |         1|
+|5     |design_1_pulse_detector_0_0  |         1|
+|6     |design_1_pulse_detector_0_1  |         1|
+|7     |design_1_pulse_detector_0_2  |         1|
+|8     |design_1_pulse_detector_0_3  |         1|
+|9     |design_1_pulse_generator_0_0 |         1|
+|10    |design_1_pulse_generator_0_2 |         1|
+|11    |design_1_pulse_generator_0_3 |         1|
+|12    |design_1_pulse_generator_0_4 |         1|
+|13    |design_1_vending_machine_0_0 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |design_1_debouncer_0_5_bbox       |     1|
+|2     |design_1_debouncer_0_6_bbox       |     1|
+|3     |design_1_debouncer_1_0_bbox       |     1|
+|4     |design_1_debouncer_1_1_bbox       |     1|
+|5     |design_1_pulse_detector_0_0_bbox  |     1|
+|6     |design_1_pulse_detector_0_1_bbox  |     1|
+|7     |design_1_pulse_detector_0_2_bbox  |     1|
+|8     |design_1_pulse_detector_0_3_bbox  |     1|
+|9     |design_1_pulse_generator_0_0_bbox |     1|
+|10    |design_1_pulse_generator_0_2_bbox |     1|
+|11    |design_1_pulse_generator_0_3_bbox |     1|
+|12    |design_1_pulse_generator_0_4_bbox |     1|
+|13    |design_1_vending_machine_0_0_bbox |     1|
+|14    |IBUF                              |     6|
+|15    |OBUF                              |     4|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1424.797 ; gain = 514.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:54 . Memory (MB): peak = 1424.797 ; gain = 500.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 1424.797 ; gain = 514.652
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1436.852 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1441.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5b63b422
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:01:10 . Memory (MB): peak = 1441.492 ; gain = 938.492
+INFO: [Common 17-1381] The checkpoint 'C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 13:23:13 2024...

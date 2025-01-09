@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Dec  6 17:32:14 2024
+# Process ID: 25732
+# Current directory: C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1
+# Command line: vivado.exe -log design_1_pulse_detector_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_pulse_detector_0_3.tcl
+# Log file: C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3.vds
+# Journal file: C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1\vivado.jou
+# Running On: Ha-Do, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 16780 MB
+#-----------------------------------------------------------
+source design_1_pulse_detector_0_3.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 470.234 ; gain = 200.102
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/Ha_Do_2407698_E5'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/pulse_detector-vitishls-ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/pulse_generator-vitishls-ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/VHDL/Ex5/debouncer'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_pulse_detector_0_3
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 9e8c0104d4f28ac3 to dir: C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.cache/ip/2023.1/9/e/9e8c0104d4f28ac3/design_1_pulse_detector_0_0.dcp to C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.cache/ip/2023.1/9/e/9e8c0104d4f28ac3/design_1_pulse_detector_0_0_sim_netlist.v to C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.cache/ip/2023.1/9/e/9e8c0104d4f28ac3/design_1_pulse_detector_0_0_sim_netlist.vhdl to C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.cache/ip/2023.1/9/e/9e8c0104d4f28ac3/design_1_pulse_detector_0_0_stub.v to C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.cache/ip/2023.1/9/e/9e8c0104d4f28ac3/design_1_pulse_detector_0_0_stub.vhdl to C:/VHDL/Ex5/Ha_Do_2407698-E5-Vivado/Ha_Do_2407698-E5-Vivado.runs/design_1_pulse_detector_0_3_synth_1/design_1_pulse_detector_0_3_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_pulse_detector_0_3, cache-ID = 9e8c0104d4f28ac3.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 17:32:27 2024...

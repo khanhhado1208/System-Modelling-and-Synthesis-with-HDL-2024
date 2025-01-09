@@ -1,0 +1,109 @@
+
+
+================================================================
+== Synthesis Summary Report of 'vending_machine'
+================================================================
++ General Information: 
+    * Date:           Wed Dec 11 13:03:45 2024
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        Ha_Do_2407698_E5
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |      Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |      & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ vending_machine  |     -|  2.70|        0|   0.000|         -|        1|     -|        no|     -|   -|  33 (~0%)|  155 (~0%)|    -|
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| candy_out  | ap_none | out       | 1        |
+| dime_in    | ap_none | in        | 1        |
+| dime_out   | ap_none | out       | 2        |
+| nickel_in  | ap_none | in        | 1        |
+| nickel_out | ap_none | out       | 1        |
+| quarter_in | ap_none | in        | 1        |
+| thanks_in  | ap_none | in        | 1        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+-------------+
+| Argument   | Direction | Datatype    |
++------------+-----------+-------------+
+| nickel_in  | in        | bool        |
+| dime_in    | in        | bool        |
+| quarter_in | in        | bool        |
+| thanks_in  | in        | bool        |
+| candy_out  | out       | bool&       |
+| nickel_out | out       | bool&       |
+| dime_out   | out       | ap_uint<2>& |
++------------+-----------+-------------+
+
+* SW-to-HW Mapping
++------------+--------------+---------+
+| Argument   | HW Interface | HW Type |
++------------+--------------+---------+
+| nickel_in  | nickel_in    | port    |
+| dime_in    | dime_in      | port    |
+| quarter_in | quarter_in   | port    |
+| thanks_in  | thanks_in    | port    |
+| candy_out  | candy_out    | port    |
+| nickel_out | nickel_out   | port    |
+| dime_out   | dime_out     | port    |
++------------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type      | Options                  | Location                                                                                                                                        |
++-----------+--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| interface | ap_none port=nickel_in   | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:42 in vending_machine, nickel_in  |
+| interface | ap_none port=dime_in     | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:43 in vending_machine, dime_in    |
+| interface | ap_none port=quarter_in  | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:44 in vending_machine, quarter_in |
+| interface | ap_none port=thanks_in   | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:46 in vending_machine, thanks_in  |
+| interface | ap_none port=candy_out   | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:49 in vending_machine, candy_out  |
+| interface | ap_none port=nickel_out  | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:50 in vending_machine, nickel_out |
+| interface | ap_none port=dime_out    | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:51 in vending_machine, dime_out   |
+| interface | ap_ctrl_none port=return | ../../Users/khanh/Downloads/vending_machine-vitishls-files/vending_machine-vitishls-files/vending_machine.cpp:53 in vending_machine, return     |
++-----------+--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

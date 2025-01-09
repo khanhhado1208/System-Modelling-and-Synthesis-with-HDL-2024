@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'counter' is power-on initialization." projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:18.519+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'next_state' is power-on initialization." projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:18.477+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'state' is power-on initialization." projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:18.428+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'btn_out' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:18.358+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'debouncer' consists of the following:&#xD;&#xA;&#x9;'load' operation ('counter_load', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:48) on static variable 'counter' [20]  (0.000 ns)&#xD;&#xA;&#x9;'icmp' operation ('icmp_ln52', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:52) [25]  (3.520 ns)&#xD;&#xA;&#x9;'and' operation ('and_ln52', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:52) [26]  (0.000 ns)&#xD;&#xA;&#x9;'select' operation ('select_ln52', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:52) [27]  (0.993 ns)&#xD;&#xA;&#x9;'store' operation ('next_state_write_ln53', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:53) of variable 'select_ln52', ../../Users/khanh/Downloads/debouncer-vitishls-files/debouncer-vitishls-files/debouncer.cpp:52 on static variable 'next_state' [28]  (1.827 ns)&#xD;&#xA;&#x9;blocking operation 0.963 ns on control path)&#xD;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1016.html" projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:17.910+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (7.303 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-871.html" projectName="debouncer" solutionName="solution1" date="2024-12-11T12:59:17.877+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
